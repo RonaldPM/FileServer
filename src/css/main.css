@@ -1,0 +1,70 @@
+body{
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+.aboutTxt{
+	color:#FFF;
+	font-family: Tahoma;
+	font-size: 0.9em;
+	margin-top: 10px;
+	margin-left: 5px;
+	position: absolute;
+	float: left;
+}
+.infoTxt{
+	color:#FFF;
+	font-family: Tahoma;
+	font-size: 0.9em;
+	margin-top: 10px;
+	margin-right: 5px;
+	float: right;
+}
+.nameTxt{
+	position: absolute;
+	margin-top: 8px;
+	margin-left: 5px;
+}
+.fileName{
+	color: #000;
+	font-family: Tahoma;
+	width:100%;
+	height:40px;
+	background: #FFFDE7;
+	border:1px solid #E0E0E0;
+}
+.topNav{
+	width:100%;
+	height:40px;
+	background: #00838F;
+}
+.mainBody{
+	width:95%;
+	margin: auto;
+}
+.typeBox{
+	width:280px;
+	height: 280px;
+	background: blue;
+	margin-left: 30px;
+	margin-top: 15px;
+	border-radius: 5px;
+	float:left;
+	cursor: pointer;
+}
+.typeTxt{
+	color: #FFF;
+	font-family: Tahoma;
+	font-size: 1.9em;
+	margin-left: 85px;
+	margin-top: 115px;
+}
+.uploadBox{
+	padding: 15px; 
+	min-width:100px; 
+	height:5px;
+	display: inline-block
+	margin-bottom:5px;
+}
