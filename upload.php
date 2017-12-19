@@ -14,7 +14,7 @@ if(isset($_FILES['file'])) {
         	if($file_ext == "png" || $file_ext == "jpg" ||$file_ext == "jpeg" ||$file_ext == "gif"){
         		$file_dir = "uploads/img/";
         	}
-        	elseif ($file_ext == "mp4" ||$file_ext == "avi" ||$file_ext == "mkv" ||$file_ext == "mpeg") {
+        	elseif ($file_ext == "mp4" ||$file_ext == "avi" ||$file_ext == "mkv" ||$file_ext == "mpeg" ||$file_ext == "mov") {
         		$file_dir = "uploads/vid/";
         	}
             elseif ($file_ext == "mp3" ||$file_ext == "flac") {
