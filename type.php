@@ -10,14 +10,22 @@
 	}
 
 	$typ = $_GET['typ'];
-	if($typ==1)
+	if($typ==1){
 		$dir = "uploads/img/";
-	elseif($typ==2)
+		$pTitle = "Images";
+	}
+	elseif($typ==2){
 		$dir = "uploads/vid/";
-	elseif($typ==3)
+		$pTitle = "Videos";
+	}
+	elseif($typ==3){
 		$dir = "uploads/aud/";
-	elseif($typ==4)
+		$pTitle = "Audio";
+	}
+	elseif($typ==4){
 		$dir = "uploads/oth/";
+		$pTitle = "Others";
+	}
 	else{
 
 	}
@@ -33,6 +41,7 @@
 			<link rel='stylesheet' href='src/css/main.css'>
 			<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 			<link rel='stylesheet' href='spine/css/responsive.css' media='screen and (max-width:900px)'>
+			<title>$pTitle</title>
 		<head>
 		<body>
 			<div class='topNav'>

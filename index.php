@@ -3,11 +3,12 @@
 		<link rel='stylesheet' href='src/css/main.css'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<link rel='stylesheet' href='src/css/responsive.css' media='screen and (max-width:900px)'>
+		<title>File Server | Home</title>
 	<head>
 	<body>
 		<div class='topNav'>
 			<div class='aboutTxt'>
-				V0.1 Beta
+				File Server v1.0
 			</div>
 			<div class='infoTxt right'>
 				<?php
