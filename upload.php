@@ -22,7 +22,7 @@ if(isset($_FILES['file'])) {
             }
             $file_destination = $file_dir . $file_name;
             if(move_uploaded_file($file_tmp, $file_destination)) {
-                header('Location: index.html');
+                header('Location: index.php');
             }
             else
             	echo "Upload failed";
