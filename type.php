@@ -37,7 +37,7 @@
 		<body>
 			<div class='topNav'>
 				<div class='aboutTxt'>
-					Home
+					<a href='index.php' style='color:#FFF;'>Home</a>
 				</div>
 				<div class='infoTxt right'>
 					$dirSize MB
