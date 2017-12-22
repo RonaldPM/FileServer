@@ -36,16 +36,16 @@
 			</div>
 			<br />
 			<a href='type.php?typ=1'>
-				<div class='typeBox' style='background:#039BE5;'><div class='typeTxt'>Images</div></div>
+				<div class='typeBox card' style='background:#D32F2F;'><div class='typeTxt'>Images</div></div>
 			</a>
 			<a href='type.php?typ=2'>
-				<div class='typeBox' style='background:#00838F;'><div class='typeTxt'>Videos</div></div>
+				<div class='typeBox card' style='background:#6A1B9A;'><div class='typeTxt'>Videos</div></div>
 			</a>
 			<a href='type.php?typ=3'>
-				<div class='typeBox' style='background:#FF6F00;'><div class='typeTxt'>Audios</div></div>
+				<div class='typeBox card' style='background:#1565C0;'><div class='typeTxt'>Audios</div></div>
 			</a>
 			<a href='type.php?typ=4'>
-				<div class='typeBox' style='background:#00C853;'><div class='typeTxt'>Others</div></div>
+				<div class='typeBox card' style='background:#FFB300;'><div class='typeTxt'>Others</div></div>
 			</a>
 		</div>
 	</body>
