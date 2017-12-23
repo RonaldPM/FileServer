@@ -17,8 +17,9 @@ if(isset($_FILES['file'])) {
     $precision = 2;
     $dirSize = substr(number_format($dirSize, $precision+1, '.', ''), 0, -1);
 
-    if($dirSize>$cap){
-        echo "Storage limit exceeded!";
+    if(($dirSize+($file['size']/1024/1024/1024))>$cap){
+        echo "Storage limit exceeded! Delete some files or try increasing the storage limit from dashboard.";
+
     }                   
     else{
         $file_name = $file['name'];
