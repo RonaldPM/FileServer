@@ -8,9 +8,14 @@
 	<body>
 		<div class='topNav'>
 			<div class='aboutTxt'>
-				File Server v1.0
+				File Server v1.1
 			</div>
-			<div class='infoTxt right'>
+			<a href='stat.php'>
+				<div class='statLogo right'>
+					<img src='src/img/stat.png' width='40px' title='Server Status' alt='Server Status'>
+				</div>
+			</a>
+			<div class='infoTxt' title='Storage used'>
 				<?php
 					function folderSize ($dir){
 					    $size = 0;
@@ -31,7 +36,7 @@
 			<div class='uploadBox'>
 				<form action='upload.php' method='post' enctype='multipart/form-data'>
 				    <input type='file' name='file'>
-				    <input type='submit' value='Upload'>
+				    <input type='submit' value='Upload' class='uploadBtn'>
 				</form>
 			</div>
 			<br />
