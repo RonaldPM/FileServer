@@ -12,7 +12,7 @@
 			</div>
 			<a href='stat.php'>
 				<div class='statLogo right'>
-					<img src='src/img/stat.png' width='40px' title='Server Status' alt='Server Status'>
+					<img src='src/img/stat.png' width='32px' title='Server Status' alt='Server Status'>
 				</div>
 			</a>
 			<div class='infoTxt' title='Storage used'>

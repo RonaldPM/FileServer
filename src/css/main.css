@@ -94,3 +94,13 @@ a{
 	margin-top:-22px; 
 	margin-right:5px;
 }
+.textInp{
+	border: 0px;
+	border-bottom: 2px solid #616161;
+	height: 25px;
+	padding:5px;
+}
+.textInp:focus{
+	outline: 0;
+	border-bottom: 2px solid #212121;
+}

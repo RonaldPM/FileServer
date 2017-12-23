@@ -36,6 +36,15 @@
 				echo "Software version : V1.1 <font size='0.2' color='#00C853'><a href='https://github.com/RonaldPM/FileServer'>Check for updates</a></font><br/><br/>";
 				echo "Total file size on disk : ".$dirSize. "MB <br/<br/>";
 				//echo "<br />Server IP : $ip";
+				echo "
+					<br />
+					Set a storage cap : 
+					<br /><br />
+					<form action='setCap.php' method='GET'>
+						<input type='text' id='cap' name='cap' class='textInp' placeholder='Enter limit in GB'>
+						<input type='submit' class='uploadBtn' value='Set limit' style='height:25px;'>
+					</form>
+				";
 			?>
 		</div>
 	</body>
