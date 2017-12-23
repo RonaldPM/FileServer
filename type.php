@@ -55,7 +55,7 @@
 			<br />
 			<div class='mainBody'>
 	";
-	if($fileCount>2){
+	if($fileCount>3){
 		for($i=2;$i<$fileCount;$i++){
 			$fileLoc = $dir.$files[$i];
 				if($files[$i]!=".notempty"){
