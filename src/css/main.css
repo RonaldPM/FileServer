@@ -89,3 +89,8 @@ a{
 	display: inline-block
 	margin-bottom:5px;
 }
+.delBtn{
+	float:right; 
+	margin-top:-22px; 
+	margin-right:5px;
+}
