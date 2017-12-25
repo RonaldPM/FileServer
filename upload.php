@@ -18,7 +18,7 @@ if(isset($_FILES['file'])) {
     $dirSize = substr(number_format($dirSize, $precision+1, '.', ''), 0, -1);
 
     if(($dirSize+($file['size']/1024/1024/1024))>$cap){
-        echo "Storage limit exceeded! Delete some files or try increasing the storage limit from dashboard.";
+        echo "Storage limit exceeded! Delete some files or increase the storage limit from dashboard.";
 
     }                   
     else{
@@ -31,7 +31,7 @@ if(isset($_FILES['file'])) {
         $file_ext = strtolower(end($file_ext));
        	$file_error = 0;
             if($file_error === 0) {
-            	if($file_ext == "png" || $file_ext == "jpg" ||$file_ext == "jpeg" ||$file_ext == "gif"){
+            	if($file_ext == "png" || $file_ext == "jpg" ||$file_ext == "jpeg" ||$file_ext == "gif" ||$file_ext == "bmp"){
             		$file_dir = "uploads/img/";
             	}
             	elseif ($file_ext == "mp4" ||$file_ext == "avi" ||$file_ext == "mkv" ||$file_ext == "mpeg" ||$file_ext == "mov") {
