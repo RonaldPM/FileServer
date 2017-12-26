@@ -29,12 +29,22 @@
 				}
 
 				$dirSize = (folderSize("uploads/")/1024)/1024;
-				$precision = 2;
-				$dirSize = substr(number_format($dirSize, $precision+1, '.', ''), 0, -1);
+				if($dirSize<1024){
+					$precision = 2;
+					$dirSize = substr(number_format($dirSize, $precision+1, '.', ''), 0, -1);
+					$dirSize= $dirSize." MB";
+				}
+				else{
+					$precision = 2;
+					$dirSize = $dirSize/1024;
+					$dirSize = substr(number_format($dirSize, $precision+1, '.', ''), 0, -1);
+					$dirSize= $dirSize." GB";
+				}
+
 				$ip = $_SERVER['SERVER_ADDR'];
 
 				echo "Software version : V1.1 <font size='0.2' color='#00C853'><a href='https://github.com/RonaldPM/FileServer'>Check for updates</a></font><br/><br/>";
-				echo "Total file size on disk : ".$dirSize. "MB <br/<br/>";
+				echo "Total file size on disk : ".$dirSize. "<br/<br/>";
 				//echo "<br />Server IP : $ip";
 				echo "
 					<br />

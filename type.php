@@ -32,8 +32,17 @@
 	$files = scandir($dir);
 	$fileCount = count($files);
 	$dirSize = (folderSize($dir)/1024)/1024;
-	$precision = 2;
-	$dirSize = substr(number_format($dirSize, $precision+1, '.', ''), 0, -1);
+	if($dirSize<1024){
+		$precision = 2;
+		$dirSize = substr(number_format($dirSize, $precision+1, '.', ''), 0, -1);
+		$dirSize= $dirSize." MB";
+	}
+	else{
+		$precision = 2;
+		$dirSize = $dirSize/1024;
+		$dirSize = substr(number_format($dirSize, $precision+1, '.', ''), 0, -1);
+		$dirSize= $dirSize." GB";
+	}
 
 	echo "
 		<html>
@@ -49,7 +58,7 @@
 					<a href='index.php' >Home</a>
 				</div>
 				<div class='infoTxt right'>
-					$dirSize MB
+					$dirSize
 				</div>
 			</div>
 			<br />
