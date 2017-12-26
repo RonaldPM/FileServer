@@ -8,7 +8,7 @@
 	<body>
 		<div class='topNav'>
 			<div class='aboutTxt'>
-				File Server v1.1
+				File Server v1.2
 			</div>
 			<a href='stat.php'>
 				<div class='statLogo right'>

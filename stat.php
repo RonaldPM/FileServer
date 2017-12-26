@@ -12,7 +12,7 @@
 			</div>
 		</div>
 		<br />
-		<div class='mainBody'>
+		<div class='mainBody paddLeft'>
 			<?php
 				function folderSize ($dir){
 				    $size = 0;
@@ -21,13 +21,6 @@
 				    }
 				    return $size;
 				}
-				function get_server_cpu_usage(){
-
-				    $load = sys_getloadavg();
-				    return $load[0];
-
-				}
-
 				$dirSize = (folderSize("uploads/")/1024)/1024;
 				if($dirSize<1024){
 					$precision = 2;
@@ -41,9 +34,7 @@
 					$dirSize= $dirSize." GB";
 				}
 
-				$ip = $_SERVER['SERVER_ADDR'];
-
-				echo "Software version : V1.1 <font size='0.2' color='#00C853'><a href='https://github.com/RonaldPM/FileServer'>Check for updates</a></font><br/><br/>";
+				echo "Software version : V1.2 <font size='0.2' color='#00C853'><a href='https://github.com/RonaldPM/FileServer'>Check for updates</a></font><br/><br/>";
 				echo "Total file size on disk : ".$dirSize. "<br/<br/>";
 				//echo "<br />Server IP : $ip";
 				echo "
