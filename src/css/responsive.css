@@ -15,10 +15,14 @@
 		font-size: 1.9em;
 		margin:auto;
 		margin-top: 42px;
+		margin-left: 12px;
 	}
 	.uploadBox{
 		align-items: center;
 	    display: flex;
 	  	justify-content: center;
+	}
+	.paddLeft{
+		margin-left: 12px;
 	}
 }
