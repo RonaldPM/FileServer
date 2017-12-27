@@ -54,8 +54,8 @@
 		<head>
 		<body>
 			<div class='topNav'>
-				<div class='aboutTxt'>
-					<a href='index.php' >Home</a>
+				<div class='aboutTxt homeLogo'>
+					<a href='index.php'><img src='src/img/home.png' width='25px'></a>
 				</div>
 				<div class='infoTxt right'>
 					$dirSize

@@ -3,12 +3,12 @@
 		<link rel='stylesheet' href='src/css/main.css'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<link rel='stylesheet' href='src/css/responsive.css' media='screen and (max-width:900px)'>
-		<title>File Server | Home</title>
+		<title>File Server | Status</title>
 	<head>
 	<body>
 		<div class='topNav'>
 			<div class='aboutTxt'>
-				<a href='index.php'>Home</a>
+				<a href='index.php'><img src='src/img/home.png' width='25px'></a>
 			</div>
 		</div>
 		<br />
@@ -34,17 +34,19 @@
 					$dirSize= $dirSize." GB";
 				}
 
-				echo "Software version : V1.2 <font size='0.2' color='#00C853'><a href='https://github.com/RonaldPM/FileServer'>Check for updates</a></font><br/><br/>";
-				echo "Total file size on disk : ".$dirSize. "<br/<br/>";
+				echo "<b>Software version :</b> V1.2.2 <font size='0.2' color='#00C853'><a href='https://github.com/RonaldPM/FileServer'>Check for updates</a></font><br/><br/>";
+				echo "<b>Total file size on disk :</b> ".$dirSize. "<br/<br/>";
 				//echo "<br />Server IP : $ip";
 				echo "
 					<br />
-					Set a storage cap : 
+					<b>Set a storage cap : </b>
 					<br /><br />
 					<form action='setCap.php' method='GET'>
 						<input type='text' id='cap' name='cap' class='textInp' placeholder='Enter limit in GB'>
 						<input type='submit' class='uploadBtn' value='Set limit' style='height:25px;'>
 					</form>
+					<br />
+					<b><a href='changelog.html'>View changelogs</a></b>
 				";
 			?>
 		</div>
