@@ -9,6 +9,10 @@
 	    return $size;
 	}
 
+	$capFile = fopen("src/set/disableDel.dat", "r") or die("Unable to open file!");
+    $delStat = fread($capFile,filesize("src/set/disableDel.dat"));
+    fclose($capFile);
+
 	$typ = $_GET['typ'];
 	if($typ==1){
 		$dir = "uploads/img/";
@@ -110,9 +114,15 @@
 								echo "
 								$files[$i]
 							</div>
-							<a href='del.php?id=$fileAddr&t=$typ'>
-								<img src='src/img/del.png' width='25px' height='25px' title='Delete File' class='delBtn'>
-							</a>
+							";
+							if($delStat==0){
+								echo "
+									<a href='del.php?id=$fileAddr&t=$typ'>
+										<img src='src/img/del.png' width='25px' height='25px' title='Delete File' class='delBtn'>
+									</a>
+								";
+							}
+							echo "
 						</div>
 					<a/>";
 				}

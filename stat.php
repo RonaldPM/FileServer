@@ -41,11 +41,50 @@
 					<br />
 					<b>Set a storage cap : </b>
 					<br /><br />
-					<form action='setCap.php' method='GET'>
+					<form action='src/set/setCap.php' method='GET'>
 						<input type='text' id='cap' name='cap' class='textInp' placeholder='Enter limit in GB'>
 						<input type='submit' class='uploadBtn' value='Set limit' style='height:25px;'>
 					</form>
-					<br />
+				";
+
+				$ip=$_SERVER['REMOTE_ADDR'];
+				if($ip=="::1"){
+					$capFile = fopen("src/set/disableDel.dat", "r") or die("Unable to open file!");
+				    $delStat = fread($capFile,filesize("src/set/disableDel.dat"));
+				    fclose($capFile);
+				    if($delStat==0){
+						echo "
+							<br />
+							<form action='src/set/disableDel.php' method='GET'>
+								<b>Disable file delete option : </b>
+								<br /><br />
+								<input type='checkbox' name='able' value='disable'>Disable
+								<br /><br />
+								<input type='submit' class='uploadBtn' value='Set rule' style='height:25px;'>
+							</form>
+						";
+					}
+					elseif($delStat==1){
+						echo "
+							<br />
+							<form action='src/set/enableDel.php' method='GET'>
+								<b>Enable file delete option : </b>
+								<br /><br />
+								<input type='checkbox' name='enable' value='enable'>Enable
+								<br /><br />
+								<input type='submit' class='uploadBtn' value='Set rule' style='height:25px;'>
+							</form>
+						";
+					}
+				}
+				else{
+					echo "
+						<br />
+						<b>Your device IP : </b> $ip
+					";
+				}
+				echo "
+					<br /><br />
 					<b><a href='changelog.html'>View changelogs</a></b>
 				";
 			?>

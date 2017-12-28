@@ -2,8 +2,8 @@
 if(isset($_FILES['file'])) {
     $file = $_FILES['file'];
 
-    $capFile = fopen("memCap.dat", "r") or die("Unable to open file!");
-    $cap = fread($capFile,filesize("memCap.dat"));
+    $capFile = fopen("src/set/memCap.dat", "r") or die("Unable to open file!");
+    $cap = fread($capFile,filesize("src/set/memCap.dat"));
     fclose($capFile);
 
     function folderSize ($dir){
