@@ -34,7 +34,7 @@
 					$dirSize= $dirSize." GB";
 				}
 
-				echo "<b>Software version :</b> V1.2.2 <font size='0.2' color='#00C853'><a href='https://github.com/RonaldPM/FileServer'>Check for updates</a></font><br/><br/>";
+				echo "<b>Software version :</b> V1.2.3 <font size='0.2' color='#00C853'><a href='https://github.com/RonaldPM/FileServer'>Check for updates</a></font><br/><br/>";
 				echo "<b>Total file size on disk :</b> ".$dirSize. "<br/<br/>";
 				//echo "<br />Server IP : $ip";
 				echo "
