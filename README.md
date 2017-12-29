@@ -11,6 +11,7 @@ LINUX PC
 1) Install LAMP (reference : https://linode.com/docs/web-servers/lamp/ ) or XAMPP (https://www.wikihow.com/Install-XAMPP-on-Linux).
 2) If LAMP collection is installed, copy the files to /var/www/html and if it is XAMPP copy the files to /opt/lampp/htdocs
 3) Give rights to the respective folder using the command 
+    
     sudo chmod -R 777 location-where-the-files-are-placed
     
 --Make sure that max upload file size have been set to a high enough value in your PHP config file inorder to allow uploading of large files.
