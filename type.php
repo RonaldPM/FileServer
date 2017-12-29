@@ -65,12 +65,19 @@
 		</div>
 		<div class="main">
 	';
-	if($fileCount>3){
+	if($fileCount>4){
 		for($i=2;$i<$fileCount;$i++){
+			if($files[$i]=="index.php")
+				continue;
 			$fileLoc = $dir.$files[$i];
 				if($files[$i]!=".notempty"){
-					echo "
-					<a href='$fileLoc'>
+					if($typ==4){
+						echo "<a href='download.php?i=".$fileLoc."'>";
+					}
+					else{
+						echo "<a href='$fileLoc'>";
+					}
+					echo"
 						<div class='fileName shadowLight'>
 						";
 							//The thumbnail
