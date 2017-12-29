@@ -47,9 +47,9 @@
           <br>Select items to upload..<br><br>
           <form action="uploadMul.php" enctype="multipart/form-data" method="post" name="uploadForm">
               <input type="text" name="inputBox" class="uploadSelector shadow" onclick="clickOnBrowse()">
-                <div class="uploadSelectorSideDiv shadow" onclick="clickOnBrowse()">Browze	</div>
+                <div class="uploadSelectorSideDiv shadow" onclick="clickOnBrowse()">Browse</div>
               <input id='upload' name="upload[]" type="file" multiple="multiple" onChange="makeFileList();" style="display:none;"/>
-              <div class="submitBtnHolder"><input type="submit" class="uploadBtn shadow" name="submit" value="Submit">
+              <div class="submitBtnHolder"><input type="submit" class="uploadBtn shadow" name="submit" value="Upload">
           </form>
               <ul id="fileList">
       				  No Files Selected

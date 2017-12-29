@@ -50,31 +50,37 @@ if(isset($_POST['submit'])){
             $file_dir = "uploads/oth/";
             $file_ext = explode('.', $file_name);
             $file_ext = strtolower(end($file_ext));
-            $file_error = 0;
-                if($file_error === 0) {
-                    if($file_ext == "png" || $file_ext == "jpg" ||$file_ext == "jpeg" ||$file_ext == "gif" ||$file_ext == "bmp"){
-                        $file_dir = "uploads/img/";
+            //Prevent upload of certain files that can cause security issues
+            if($file_ext=="php" || $file_ext=="html"){
+                $failUpload++;
+                continue;
+            }
+            else{
+                $file_error = 0;
+                    if($file_error === 0) {
+                        if($file_ext == "png" || $file_ext == "jpg" ||$file_ext == "jpeg" ||$file_ext == "gif" ||$file_ext == "bmp"){
+                            $file_dir = "uploads/img/";
+                        }
+                        elseif ($file_ext == "mp4" ||$file_ext == "avi" ||$file_ext == "mkv" ||$file_ext == "mpeg" ||$file_ext == "mov") {
+                            $file_dir = "uploads/vid/";
+                        }
+                        elseif ($file_ext == "mp3" ||$file_ext == "flac") {
+                            $file_dir = "uploads/aud/";
+                        }
+                        $file_destination = $file_dir . $file_name;
+                        if(move_uploaded_file($file_tmp, $file_destination)) {
+                            continue;
+                        }
+                        else
+                            $failUpload++;
                     }
-                    elseif ($file_ext == "mp4" ||$file_ext == "avi" ||$file_ext == "mkv" ||$file_ext == "mpeg" ||$file_ext == "mov") {
-                        $file_dir = "uploads/vid/";
-                    }
-                    elseif ($file_ext == "mp3" ||$file_ext == "flac") {
-                        $file_dir = "uploads/aud/";
-                    }
-                    $file_destination = $file_dir . $file_name;
-                    if(move_uploaded_file($file_tmp, $file_destination)) {
-                        continue;
-                    }
-                    else
-                        $failUpload++;
-                }
+            }
         }
         //Redirect to home page
         if($failUpload>0)
-            header('Location: index.php?e=$failUpload');
-        else{
+            header('Location: index.php?e=1');
+        else
             header('Location: index.php');
-        }
         //header('Location: index.php');
     }
     //Storage cap exceeded. Error message is shown
