@@ -50,7 +50,6 @@
 	echo '
 	<!DOCTYPE html>
 	<html>
-	<link rel="shortcut icon" type="image/png" href="https://material.io/icons/static/images/icons-180x180.png">
 	<meta name="theme-color" content="#111">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<head>
@@ -61,7 +60,7 @@
 	<body>
 	<body id="body">
 		<div class="topbar shadowDeep">
-			<a href="." class="whiteLink">Back</a>
+			<a href="index.php" class="whiteLink">Back</a>
 			<div class="rightPanel">'.$dirSize.'</div>
 		</div>
 		<div class="main">
@@ -124,7 +123,7 @@
 	}
 	else{
 		//The folder is empty
-		echo "<div class='noFiles'>Folder is empty</div>";
+		echo "<div style='font-family:arial;color:#555;font-size:18px;'>Folder is empty</div>";
 	}
 	echo "
 			</div>

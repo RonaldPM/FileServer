@@ -28,7 +28,7 @@ if(isset($_POST['submit'])){
     }
     else{
         //Redirect to home page
-        header('Location:.');
+        header('Location: index.php');
     }
 
     //Add current folder size and the size of the file being uploaded
@@ -81,8 +81,5 @@ if(isset($_POST['submit'])){
     else{
          echo "Storage limit exceeded! Delete some files or increase the storage limit from dashboard.";
     }
-}
-else{
-  header('Location:.');
 }
 ?>

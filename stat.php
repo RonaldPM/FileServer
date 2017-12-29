@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<link rel="shortcut icon" type="image/png" href="https://material.io/icons/static/images/icons-180x180.png">
 <meta name="theme-color" content="#111">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <head>
@@ -11,7 +10,7 @@
 <body>
 <body id="body">
 		<div class='main'>
-			<a href="." class="whiteLink"><div id="uploadLaunchButton" class="shadowLight">Back</div></a>
+			<a href="index.php" class="whiteLink"><div id="uploadLaunchButton" class="shadowLight">Back</div></a>
       <div class="leftPart">
         <div class="matterHolder shadow">
           <font class="title-in">FileServer</font><br><br>
@@ -49,7 +48,7 @@
   				";
 
   				$ip=$_SERVER['REMOTE_ADDR'];
-  				if($ip=="127.0.0.1"){
+  				if($ip=="127.0.0.1" || $ip=="::1"){
   					$capFile = fopen("src/set/disableDel.dat", "r") or die("Unable to open file!");
   				    $delStat = fread($capFile,filesize("src/set/disableDel.dat"));
   				    fclose($capFile);
@@ -99,8 +98,8 @@
         <div class="inRightPart"></div>
       </div>
       <div class="deleteOption shadow">
-        Software Version : V1.2.3<br>
-        <a style="line-height:1.6;" href="https://github.com/RonaldPM/FileServer">Check for Updates</a>
+        Software Version : V2.0<br>
+        <a style="line-height:1.6;" href="https://github.com/RonaldPM/FileServer">Check for Updates on GitHub</a>
       </div
     </div>
 		</div>
