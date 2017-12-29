@@ -1,0 +1,76 @@
+
+@media (min-width:960px){
+body{width:100%;font-family:"calibri light",calibri,arial;font-weight:100;margin:0px;background:#fff;overflow-x:hidden;}
+a{color:#00a217;text-decoration:none;outline:none;cursor:pointer;}
+input{outline:none;}
+.shadow{box-shadow:0 2px 2px rgba(0,0,0,0.5);transition:0.2s;}
+.rightPanel{float:right;margin-right:40px;}
+.main{width:70%;margin:auto;padding-top:7%;}
+.leftPart{width:64%;float:left;}
+.matterHolder{background:#fff;color:#555;font-size:18px;padding:20px;}
+.title-in{font-size:24px;color:#4285f4;}
+.textInp{width:70%;padding-left:6px;height:36px;border:0px;border-bottom:2px solid #4a92ff;float:left;color:#444;}
+.shadowLight{box-shadow:0 1px 2px rgba(0,0,0,0.3);}
+.setButton{width:28%;border:0px;background:#bcbcbc;padding:9px;cursor:pointer;border-bottom:2px solid #4a92ff;}
+.deleteOption{background:#e0e0e0;color:#555;font-size:18px;padding:20px;}
+.rightPart{width:30%;margin-left:5%;float:left;}
+.inRightPart{background:rgba(0,0,0,0.6);height:170px;color:#fff;}
+.simpleImg{background:url('src/img/update.gif') center/cover;padding:0px;}
+.checkUpdate{width:80%;padding:16px;border-radius:20px;}
+.whiteLink{color:#fff;}
+.setRuleBtn{padding:8px;border:0px;color:#fff;border-radius: 2px;cursor: pointer;}
+.disable{background:#ea4335;}
+.enable{background:#4285f4;}
+#uploadLaunchButton{padding:20px;transition:0.3s;padding-top:10px;padding-bottom:10px;margin-bottom:30px;border-radius:20px;background:#4285f4;width:40px;font-size:17px;color:#fff;}
+#uploadLaunchButton:hover{transition:0.3s;cursor:pointer;background:#999;}
+}
+
+@media (min-width:600px) and (max-width:959px){
+  body{width:100%;font-family:"calibri light",calibri,arial;font-weight:100;margin:0px;background:#fff;overflow-x:hidden;}
+  a{color:#00a217;text-decoration:none;outline:none;cursor:pointer;}
+  input{outline:none;}
+  .shadow{box-shadow:0 2px 2px rgba(0,0,0,0.5);transition:0.2s;}
+  .rightPanel{float:right;margin-right:20px;}
+  .main{width:90%;margin:auto;padding-top:7%;}
+  .leftPart{width:64%;float:left;}
+  .matterHolder{background:#fff;color:#555;font-size:16px;padding:16px;}
+  .title-in{font-size:24px;color:#4285f4;}
+  .textInp{width:69%;padding-left:6px;height:36px;border:0px;border-bottom:2px solid #4a92ff;float:left;color:#444;}
+  .shadowLight{box-shadow:0 1px 2px rgba(0,0,0,0.3);}
+  .setButton{width:28%;border:0px;background:#bcbcbc;padding:9px;cursor:pointer;border-bottom:2px solid #4a92ff;}
+  .deleteOption{background:#e0e0e0;color:#555;font-size:16px;padding:16px;}
+  .rightPart{width:30%;margin-left:5%;float:left;}
+  .inRightPart{background:rgba(0,0,0,0.6);height:170px;color:#fff;}
+  .simpleImg{background:url('src/img/update.gif') center/cover;padding:0px;}
+  .checkUpdate{width:80%;padding:16px;border-radius:20px;}
+  .whiteLink{color:#fff;}
+  .setRuleBtn{padding:8px;border:0px;color:#fff;border-radius: 2px;cursor: pointer;}
+  .disable{background:#ea4335;}
+  .enable{background:#4285f4;}
+  #uploadLaunchButton{padding:20px;padding-top:10px;padding-bottom:10px;border-radius:20px;background:#3f51b5;width:60px;font-size:17px;color:#fff;}
+  #uploadLaunchButton:hover{transition:0.3s;cursor:pointer;background:#243393;}
+}
+
+@media only screen and (max-width:599px){
+  body{width:100%;font-family:"calibri light",calibri,arial;font-weight:200;margin:0px;background:#fff;overflow-x:hidden;}
+  a{color:#00a217;text-decoration:none;outline:none;cursor:pointer;}
+  input{outline:none;}
+  .shadow{box-shadow:0 2px 2px rgba(0,0,0,0.5);transition:0.2s;}
+  .rightPanel{float:right;margin-right:20px;}
+  .main{width:90%;margin:auto;padding-top:7%;}
+  .leftPart{width:100%;float:left;}
+  .matterHolder{background:#fff;color:#000;font-size:16px;padding:16px;}
+  .title-in{font-size:24px;color:#4285f4;}
+  .textInp{width:98%;padding-left:6px;height:36px;border:0px;border-bottom:2px solid #4a92ff;float:left;color:#444;}
+  .shadowLight{box-shadow:0 1px 2px rgba(0,0,0,0.3);}
+  .setButton{width:28%;border:0px;background:#bcbcbc;margin-top:10px;padding:10px;cursor:pointer;}
+  .deleteOption{background:#e0e0e0;color:#555;font-size:16px;padding:16px;}
+  .rightPart{width:100%;margin-top:7%;margin-bottom:10%;float:left;clear:left;}
+  .inRightPart{background:rgba(0,0,0,0.6);height:170px;color:#fff;}
+  .simpleImg{background:url('src/img/update.gif') center/cover;padding:0px;}
+  .checkUpdate{width:80%;padding:16px;border-radius:20px;}
+  .whiteLink{color:#fff;}
+  .setRuleBtn{padding:8px;border:0px;color:#fff;border-radius: 2px;cursor: pointer;}
+  .disable{background:#ea4335;}
+  .enable{background:#4285f4;}
+}
