@@ -1,0 +1,81 @@
+
+@media (min-width:960px){
+body{width:100%;font-family:"calibri light",calibri,arial;font-weight:100;margin:0px;background:#fff;overflow-x:hidden;}
+a{color:#c8c8c8;text-decoration:none;outline:none;cursor:pointer;}
+input{outline:none;}
+li{list-style-type:none;}
+.topbar{width:100%;position:fixed;background:#3f51b5;padding:18px;color:#fff;font-size:18px;}
+.shadow{box-shadow:0 2px 2px rgba(0,0,0,0.5);transition:0.2s;}
+.shadowDeep{box-shadow:1px 2px 1px rgba(0,0,0,0.5);color:#fff;transition:0.2s;}
+.rightPanel{float:right;margin-right:40px;font-size:16px;}
+.statIconHolder{position:fixed;top:7%;border-radius: 100%;background:#c0e2ff;width:50px;height:50px;}
+.statImg{height:50px;width:50px;cursor:pointer;}
+.main{width:70%;margin:auto;padding-top:10%;}
+.uploadHolder{width:100%;margin-bottom:30px;}
+#uploadLaunchButton{padding:20px;padding-top:10px;padding-bottom:10px;border-radius:20px;background:#3f51b5;width:60px;font-size:17px;color:#fff;}
+#uploadLaunchButton:hover{transition:0.3s;cursor:pointer;background:#243393;}
+.inContainer{width:60%;height:auto;padding:0px;transition:0.1s;opacity:0;}
+.inContainer_later{width:60%;transition:0.3s;padding:20px;color:#555;opacity:1;background:#fff;}
+.uploadSelector{padding-left:6px;height:36px;width:70%;border:1px solid #e0e0e0;float:left;color:#444;cursor: pointer;}
+.uploadSelectorSideDiv{float:left;background:#4285f4;height:29px;width:20%;text-align:center;color:#fff;cursor: pointer;font-family: arial;padding-top:11px;}
+.uploadBtn{background:#e0e0e0;border:0px;height:40px;cursor: pointer;width:100px;color:#666;margin-top:20px;}
+#fileList{font-size:15px;color:#444;font-family:arial;padding-top:10px;line-height:1.2;padding-left:2px;}
+.closeBtn{height:16px;width:16px;background:#ea4335;float:right;border-radius: 100%;cursor:pointer;}
+.pieceHolder{background:#fff;width:22%;height:200px;float:left;margin-right:3%;cursor:pointer;border-radius:2px;}
+.pieceHolder-image{width:100%;height:150px;border-top-left-radius:2px;border-top-right-radius:2px;}
+.pieceHolder-text{padding:10px;padding-top:12px;font-size:20px;color:#555;}
+}
+
+@media (min-width:600px) and (max-width:959px){
+body{width:100%;font-family:calibri light,calibri,arial;font-weight:100;margin:0px;background:#fff;overflow-x:hidden;}
+a{color:#c8c8c8;text-decoration:none;outline:none;cursor:pointer;}
+input{outline:none;}
+li{list-style-type:none;}
+.topbar{width:100%;position:fixed;background:#3f51b5;padding:17px;font-size:18px;}
+.shadow{box-shadow:0 2px 2px rgba(0,0,0,0.3);color:#fff;}
+.shadowDeep{box-shadow:0 4px 4px rgba(0,0,0,0.4);color:#fff;}
+.rightPanel{float:right;margin-right:40px;font-size:16px;padding-top:3px;}
+.statIconHolder{position:fixed;top:8%;border-radius: 100%;background:#c0e2ff;width:45px;height:45px;}
+.statImg{height:45px;width:45px;cursor:pointer;}
+.main{width:80%;margin:auto;padding-top:14%;}
+.uploadHolder{width:100%;margin-bottom:30px;}
+#uploadLaunchButton{padding:20px;padding-top:10px;padding-bottom:10px;border-radius:20px;background:#3f51b5;width:60px;font-size:17px;color:#fff;}
+#uploadLaunchButton:hover{transition:0.3s;cursor:pointer;background:#243393;}
+.inContainer{width:75%;height:auto;padding:0px;transition:0.1s;opacity:0;}
+.inContainer_later{width:75%;transition:0.3s;padding:20px;color:#555;opacity:1;background:#fff;}
+.uploadSelector{padding-left:6px;height:36px;width:70%;border:1px solid #e0e0e0;float:left;color:#444;cursor: pointer;}
+.uploadSelectorSideDiv{float:left;background:#4285f4;height:29px;width:20%;text-align:center;color:#fff;cursor: pointer;font-family: arial;padding-top:11px;}
+.uploadBtn{background:#e0e0e0;border:0px;height:40px;cursor: pointer;width:100px;color:#666;margin-top:20px;}
+#fileList{font-size:15px;color:#444;font-family:arial;padding-top:10px;line-height:1.2;padding-left:2px;word-wrap:break-word;}
+.closeBtn{height:16px;width:16px;background:#ea4335;float:right;border-radius: 100%;cursor:pointer;}
+.pieceHolder{background:#fff;width:43%;height:200px;float:left;margin-right:7%;cursor:pointer;border-radius:2px;margin-bottom:50px;}
+.pieceHolder-image{width:100%;height:150px;border-top-left-radius:2px;border-top-right-radius:2px;}
+.pieceHolder-text{padding:10px;padding-top:12px;font-size:20px;color:#555;}
+}
+
+@media only screen and (max-width:599px){
+body{width:100%;font-family:calibri light,calibri,arial;font-weight:100;margin:0px;background:#fff;overflow-x:hidden;}
+a{color:#c8c8c8;text-decoration:none;outline:none;cursor:pointer;}
+input{outline:none;}
+li{list-style-type:none;}
+.topbar{width:100%;position:fixed;background:#424242;padding:14px;font-size:18px;}
+.shadow{box-shadow:0 2px 2px rgba(0,0,0,0.3);color:#fff;}
+.shadowDeep{box-shadow:0 2px 2px rgba(0,0,0,0.4);color:#fff;}
+.rightPanel{float:right;margin-right:30px;font-size:16px;padding-top:4px;}
+.statIconHolder{position:fixed;top:7%;border-radius:100%;background:#c0e2ff;width:38px;height:38px;}
+.statImg{height:38px;width:38px;cursor:pointer;float:right;}
+.main{width:80%;margin:auto;padding-top:28%;}
+.uploadHolder{width:100%;margin-bottom:30px;}
+#uploadLaunchButton{padding:20px;padding-top:10px;padding-bottom:10px;border-radius:20px;background:#3f51b5;width:60px;font-size:17px;color:#fff;}
+#uploadLaunchButton:hover{transition:0.3s;cursor:pointer;background:#243393;}
+.inContainer{width:90%;height:auto;padding:0px;transition:0.1s;opacity:0;}
+.inContainer_later{width:84%;transition:0.3s;padding:20px;color:#555;opacity:1;background:#fff;}
+.uploadSelector{padding-left:4px;height:36px;width:60%;font-size:14px;border:1px solid #e0e0e0;float:left;color:#444;cursor: pointer;}
+.uploadSelectorSideDiv{float:left;background:#4285f4;height:29px;width:30%;font-size:14px;text-align:center;color:#fff;cursor: pointer;font-family: arial;padding-top:11px;}
+.uploadBtn{background:#e0e0e0;border:0px;height:40px;cursor: pointer;width:100px;color:#666;margin-top:20px;}
+#fileList{font-size:15px;color:#444;font-family:arial;padding-top:10px;line-height:1.2;padding-left:2px;word-wrap:break-word;}
+.closeBtn{height:16px;width:16px;background:#ea4335;float:right;border-radius: 100%;cursor:pointer;}
+.pieceHolder{background:#fff;width:100%;height:200px;float:left;cursor:pointer;border-radius:2px;margin-bottom:50px;}
+.pieceHolder-image{width:100%;height:150px;border-top-left-radius:2px;border-top-right-radius:2px;}
+.pieceHolder-text{padding:10px;padding-top:12px;font-size:20px;color:#555;}
+}
