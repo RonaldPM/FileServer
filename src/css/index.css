@@ -58,7 +58,7 @@ body{width:100%;font-family:calibri light,calibri,arial;font-weight:100;margin:0
 a{color:#c8c8c8;text-decoration:none;outline:none;cursor:pointer;}
 input{outline:none;}
 li{list-style-type:none;}
-.topbar{width:100%;position:fixed;background:#3f51b5;padding:14px;font-size:18px;}
+.topbar{width:100%;position:fixed;background:#424242;padding:14px;font-size:18px;}
 .shadow{box-shadow:0 2px 2px rgba(0,0,0,0.3);color:#fff;}
 .shadowDeep{box-shadow:0 2px 2px rgba(0,0,0,0.4);color:#fff;}
 .rightPanel{float:right;margin-right:30px;font-size:16px;padding-top:4px;}

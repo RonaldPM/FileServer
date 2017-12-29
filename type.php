@@ -124,7 +124,7 @@
 	}
 	else{
 		//The folder is empty
-		echo "<div style='font-family:arial;color:#555;font-size:18px;'>Folder is empty</div>";
+		echo "<div class='noFiles'>Folder is empty</div>";
 	}
 	echo "
 			</div>

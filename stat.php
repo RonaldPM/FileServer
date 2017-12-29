@@ -11,7 +11,7 @@
 <body>
 <body id="body">
 		<div class='main'>
-			<a href="index.php" class="whiteLink"><div id="uploadLaunchButton" class="shadowLight">Back</div></a>
+			<a href="." class="whiteLink"><div id="uploadLaunchButton" class="shadowLight">Back</div></a>
       <div class="leftPart">
         <div class="matterHolder shadow">
           <font class="title-in">FileServer</font><br><br>
