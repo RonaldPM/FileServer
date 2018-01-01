@@ -10,7 +10,7 @@
 <body>
 <body id="body">
 		<div class='main'>
-			<a href="index.php" class="whiteLink"><div id="uploadLaunchButton" class="shadowLight">Back</div></a>
+			<a href="." class="whiteLink"><div id="uploadLaunchButton" class="shadowLight">Back</div></a>
       <div class="leftPart">
         <div class="matterHolder shadow">
           <font class="title-in">FileServer</font><br><br>
@@ -89,9 +89,36 @@
   				}
   				echo "
   					<a style='color:#777;font-size:15px;' href='changelog.html'>View Changelogs</a>
-  				";
-  			?>
-      </div>
+      </div>";
+      if($ip=="127.0.0.1" || $ip=="::1"){
+        $capFile = fopen("src/set/developer.dat", "r") or die("Unable to open file!");
+        $devStat = fread($capFile,filesize("src/set/developer.dat"));
+        if($devStat==0){
+        ?>
+          <div class="matterHolder shadow margin30">
+            <font class="title-in">Developer Mode</font><br><br>
+            Developer Mode enables the sharing of both files and folders. Switch to developer mode?
+            <form action='src/set/dev.php' method='POST'><br>
+              <input type="text" value="1" style="display:none;" name="value">
+              <input type='submit' class='setRuleBtn enable shadow' value='Yes. Do switch'>
+            </form>
+          </div>
+        <?php
+        }
+        else{
+          ?>
+          <div class="matterHolder shadow margin30">
+            <font class="title-in">You are currently in Developer Mode</font><br><br>
+            Switch back to normal?<br>
+            <form action='src/set/dev.php' method='POST'><br>
+              <input type="text" value="0" style="display:none;" name="value">
+              <input type='submit' class='setRuleBtn disable shadow' value='Yes. Do switch'>
+            </form>
+          </div>
+          <?php
+        }
+      }
+      ?>
     </div>
     <div class="rightPart">
       <div class='deleteOption shadow' style="background:url('src/img/update.gif') center/cover;padding:0px;">

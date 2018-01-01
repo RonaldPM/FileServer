@@ -65,7 +65,7 @@
 		</div>
 		<div class="main">
 	';
-	if($fileCount>4){
+	if($fileCount>3){
 		for($i=2;$i<$fileCount;$i++){
 			if($files[$i]=="index.php")
 				continue;

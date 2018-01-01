@@ -35,6 +35,21 @@ function hideuploadBox(){
 	document.getElementById('uploadLaunchButton').style.opacity="1";
 }
 
+function showstartnewBox(){
+	document.getElementById('instartContainer').className="inContainer_later shadow";
+	document.getElementById('body').style.background="#e0e0e0";
+	document.getElementById('lcartestart').style.display="block";
+	document.getElementById('startnewLaunchButton').style.opacity="0";
+	document.getElementById('asd').focus();
+}
+
+function hidestartnewBox(){
+	document.getElementById('instartContainer').className="inContainer";
+	document.getElementById('body').style.background="#fff";
+	document.getElementById('lcartestart').style.display="none";
+	document.getElementById('startnewLaunchButton').style.opacity="1";
+}
+
 function clickOnBrowse(){
 	document.getElementById('upload').click();
 }

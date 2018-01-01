@@ -121,6 +121,7 @@ input{
     cursor:pointer;
     background:#999;
 }
+  .margin30{margin-top:30px;margin-bottom:70px;background:#e0e0e0;}
 
 }
 @media (min-width:600px) and (max-width:959px){

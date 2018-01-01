@@ -62,6 +62,7 @@ li{
 .uploadHolder{
     width:100%;
     margin-bottom:30px;
+    padding-top:50px;
 }
 #uploadLaunchButton{
     padding:20px;
@@ -159,7 +160,21 @@ li{
     font-size:20px;
     color:#555;
 }
-
+  .inherit{color:inherit;}
+  .mainAfterDev{clear:left;width:70%;margin:auto;padding-bottom:200px;}
+  .border-top{border-top:1px solid #e0e0e0;margin-top:50px;}
+  .shadowLight{box-shadow:0 1px 2px rgba(0,0,0,0.3);}
+  .dev-projectSecHolder{width:100%;color:#444;clear:left;}
+  .dev-heading{font-size:23px;font-weight:light;}
+  .dev-content{margin-top:20px;font-size:17px;}
+  .no-filesHelpText{color:#666;}
+  .width-pname{width:90%;}
+  .dev-projectElem{float:left;width:31%;cursor:pointer;margin-right:2%;margin-bottom:20px;}
+  .dev-projectHeading{font-size:19px;background:#8c8c8c;border-top-left-radius:3px;border-top-right-radius:3px;padding:14px;}
+  .dev-projectDesc{font-size:16px;line-height:1.5;padding:14px;border-radius:2px;border-bottom-left-radius:3px;border-bottom-right-radius:3px;}
+  .dev-projectElem:hover{box-shadow:1px 5px 4px rgba(0,0,0,0.4);transition:0.1s;}
+  #startnewLaunchButton{width:140px;color:#fff;background:#3f51b5;padding:13px;border-radius:20px;margin-top:-30px;cursor:pointer;}
+  #startnewLaunchButton:hover{box-shadow:1px 2px 3px rgba(0,0,0,0.7);background:#8c8c8c;}
 }
 @media (min-width:600px) and (max-width:959px){
      body{
@@ -191,7 +206,6 @@ li{
 }
 .shadow{
     box-shadow:0 2px 2px rgba(0,0,0,0.3);
-    color:#fff;
 }
 .shadowDeep{
     box-shadow:0 4px 4px rgba(0,0,0,0.4);
@@ -234,6 +248,7 @@ li{
     width:60px;
     font-size:17px;
     color:#fff;
+    margin-top:50px;
 }
 #uploadLaunchButton:hover{
     transition:0.3s;
@@ -323,6 +338,21 @@ li{
     font-size:20px;
     color:#555;
 }
+.inherit{color:#555;}
+.mainAfterDev{clear:left;width:80%;margin:auto;padding-bottom:200px;}
+.border-top{border-top:1px solid #e0e0e0;margin-top:50px;}
+.shadowLight{box-shadow:0 1px 2px rgba(0,0,0,0.3);}
+.dev-projectSecHolder{width:100%;color:#444;clear:left;}
+.dev-heading{font-size:23px;font-weight:light;}
+.dev-content{margin-top:20px;font-size:17px;}
+.no-filesHelpText{color:#666;}
+.width-pname{width:90%;}
+.dev-projectElem{float:left;width:46%;cursor:pointer;margin-right:4%;margin-bottom:20px;}
+.dev-projectHeading{font-size:19px;background:#8c8c8c;border-top-left-radius:3px;border-top-right-radius:3px;padding:14px;}
+.dev-projectDesc{font-size:16px;line-height:1.5;padding:14px;border-radius:2px;border-bottom-left-radius:3px;border-bottom-right-radius:3px;}
+.dev-projectElem:hover{box-shadow:1px 5px 4px rgba(0,0,0,0.4);transition:0.1s;}
+#startnewLaunchButton{width:140px;color:#fff;background:#3f51b5;padding:13px;border-radius:20px;margin-top:-30px;cursor:pointer;}
+#startnewLaunchButton:hover{box-shadow:1px 2px 3px rgba(0,0,0,0.7);background:#8c8c8c;}
 
 }
 @media only screen and (max-width:599px){
@@ -349,13 +379,12 @@ li{
 .topbar{
     width:100%;
     position:fixed;
-    background:#3f51b5;
+    background:#424242;
     padding:14px;
     font-size:18px;
 }
 .shadow{
     box-shadow:0 2px 2px rgba(0,0,0,0.3);
-    color:#fff;
 }
 .shadowDeep{
     box-shadow:0 2px 2px rgba(0,0,0,0.4);
@@ -382,7 +411,7 @@ li{
     float:right;
 }
 .main{
-    width:80%;
+    width:90%;
     margin:auto;
     padding-top:28%;
 }
@@ -399,6 +428,7 @@ li{
     width:60px;
     font-size:17px;
     color:#fff;
+    margin-top:50px;
 }
 #uploadLaunchButton:hover{
     transition:0.3s;
@@ -488,4 +518,20 @@ li{
     padding-top:12px;
     font-size:20px;
     color:#555;
+}
+.inherit{color:#555;}
+.mainAfterDev{clear:left;width:90%;margin:auto;padding-bottom:200px;}
+.border-top{border-top:1px solid #e0e0e0;margin-top:50px;}
+.shadowLight{box-shadow:0 1px 2px rgba(0,0,0,0.3);}
+.dev-projectSecHolder{width:100%;color:#444;clear:left;}
+.dev-heading{font-size:23px;font-weight:light;}
+.dev-content{margin-top:20px;font-size:17px;}
+.no-filesHelpText{color:#666;}
+.width-pname{width:100%;}
+.dev-projectElem{float:left;width:100%;cursor:pointer;margin-bottom:20px;}
+.dev-projectHeading{font-size:20px;font-weight:normal;background:#8c8c8c;border-top-left-radius:3px;border-top-right-radius:3px;padding:14px;}
+.dev-projectDesc{font-size:16px;line-height:1.5;padding:14px;border-radius:2px;border-bottom-left-radius:3px;border-bottom-right-radius:3px;}
+.dev-projectElem:hover{box-shadow:1px 5px 4px rgba(0,0,0,0.4);transition:0.1s;}
+#startnewLaunchButton{width:140px;color:#fff;background:#3f51b5;padding:13px;border-radius:20px;margin-top:-30px;cursor:pointer;}
+#startnewLaunchButton:hover{box-shadow:1px 2px 3px rgba(0,0,0,0.7);background:#8c8c8c;}
 }
