@@ -1,4 +1,3 @@
 <?php
-
 unlink('test.txt');
 ?>
