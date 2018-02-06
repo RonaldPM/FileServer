@@ -10,4 +10,4 @@ allow uploading of large files.
 2) Connect to the home network and set a static IP for you computer.
 3) Once it is done make sure you have enabled in-bound and out-bound rules to enable.
 4) Now if you type in the IP address of the now created server on the web browser on any of the devices connected to the LAN,
-you will be able to see the web interface and will be able to upload files to the server.
+you will be able to see the web interface and will be able to upload and manage files on the server.
