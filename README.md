@@ -12,4 +12,4 @@ allow uploading of large files.
 4) Now if you type in the IP address of the now created server on the web browser on any of the devices connected to the LAN,
 you will be able to see the web interface and will be able to upload and manage files on the server.
 
-**On Linux based distributions, you might have to manually enable write permissions on the uploads folder for this applicatin to work.**
+**On Linux based distributions, you might have to manually enable write permissions on the uploads folder for this application to work.**
