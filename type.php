@@ -76,6 +76,7 @@
 					}
 					else{
 						echo "<a href='$fileLoc'>";
+						// echo "<a href='download.php?i=".$fileLoc."' style='background-color:#196cbf;'>Download</a>";
 					}
 					echo"
 						<div class='fileName shadowLight'>
@@ -115,6 +116,9 @@
 								$files[$i]
 							</div>
 							";
+							if($typ!=4){
+								echo "<a href='download.php?i=".$fileLoc."' style='background-color:#196cbf;color:#FFF;padding:4px;border-radius:6px;'>Download</a>";
+							}
 							if($delStat==0){
 								echo "
 									<a href='del.php?id=$fileAddr&t=$typ'>
