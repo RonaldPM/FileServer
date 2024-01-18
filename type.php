@@ -76,7 +76,6 @@
 					}
 					else{
 						echo "<a href='$fileLoc'>";
-						// echo "<a href='download.php?i=".$fileLoc."' style='background-color:#196cbf;'>Download</a>";
 					}
 					echo"
 						<div class='fileName shadowLight'>
